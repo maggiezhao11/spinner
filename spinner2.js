@@ -4,6 +4,7 @@ const arraySpinner = ['|', '/', '- ', '\\'];
 let interval = 0;
 const space = setInterval (() => {
 process.stdout.write('\r' + arraySpinner[++interval % arraySpinner.length]);
+//need to learn how to use modulo connect two numbers as condition in codes)
 if (interval > 5 ) {
   clearInterval (space);
   process.stdout.write('\n=> d2\n');
